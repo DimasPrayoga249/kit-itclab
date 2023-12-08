@@ -19,8 +19,7 @@ Support Vector Machine (SVM) adalah model pembelajaran mesin yang digunakan untu
 
 ## Metode Penelitian
 
-![Metode](https://github.com/Aliefindymillani/Mikrokontroler/assets/89888415/85cc8a19-3ed3-4b36-86a6-16be76ec11f4)
-
+![Metode](https://github.com/DimasPrayoga249/kit-itclab/blob/eeb84f4e16f32c0d5b51d41276a0c00a11ebaa8d/assets/metode_penelitian.jpg)
 
 Metode penelitian adalah metode yang digunakan dalam mengumpulkan, menganalisis, dan menginterpretasi data untuk menjawab pertanyaan penelitian atau mencapai tujuan penelitian yang telah ditetapkan. Pada sub bab ini kami ingin menjelaskan metode penelitian yang digunakan dalam studi ini, yang meliputi pengumpulan data, pra proses data, pelatihan model, dan evaluasi.
 
