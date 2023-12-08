@@ -1,6 +1,6 @@
 # IMPLEMENTASI SVM SEBAGAI PENGGANTI PENGENDALI PID PADA KIT ITCLAB
 
-![JUDUL](https://github.com/Aliefindymillani/Mikrokontroler/assets/89888415/cd78f8b6-163b-4944-a817-e28578725250)
+![JUDUL](https://github.com/DimasPrayoga249/kit-itclab/blob/854742abb1219a9ccd1b58730a7e0a118ce76255/assets/SVM_ITCLAB.png)
 
 ## Mikrokontroler
 Mikrokontroler adalah perangkat semikonduktor yang terdiri dari CPU, memori, dan perangkat input/output terpadu, dirancang khusus untuk aplikasi dalam sistem tertanam. Berbeda dengan mikroprosesor yang hanya menyediakan CPU, mikrokontroler memiliki komponen yang diperlukan untuk menjalankan program secara mandiri. Komponen utama mikrokontroler melibatkan CPU sebagai pusat pemrosesan, memori untuk menyimpan program dan data, serta perangkat input/output (I/O) seperti pin digital dan analog, komunikasi serial, serta timer dan counter untuk penghitungan waktu atau peristiwa tertentu. Dengan ukuran kecil, konsumsi daya rendah, dan fleksibilitas pemrograman, mikrokontroler banyak digunakan dalam kendali otomatis, elektronika konsumen, kendaraan, peralatan medis, dan berbagai aplikasi lainnya. Keunggulannya terletak pada kemampuan untuk memberikan kontrol dan otomatisasi pada perangkat dengan efisien dan fleksibel. Sebagai inti dari inovasi di berbagai industri, mikrokontroler terus berperan penting dalam perkembangan teknologi.
