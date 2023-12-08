@@ -27,19 +27,19 @@ Metode penelitian adalah metode yang digunakan dalam mengumpulkan, menganalisis,
 Dalam penelitian ini, pengumpulan data dilakukan dengan memanfaatkan perangkat lunak emulasi TCLab. Pada tahap pengumpulan data, TCLab emulator diatur pada kecepatan 100 kali. Selama simulasi berlangsung, setpoint suhu diberikan dengan variasi yang beragam. Setpoint ini mencerminkan nilai target suhu yang diinginkan dalam pengendalian suhu. Untuk memastikan kualitas pelatihan model, variasi d
 iberlakukan pada setpoint dalam penelitian ini. TCLab emulator dijalankan selama 540 loop. Loop atau siklus pengendalian suhu merujuk pada jumlah iterasi di mana TCLab emulator melakukan pembacaan sensor suhu dan mengatur aktuator suhu untuk mencapai setpoint yang telah ditetapkan. Pada setiap iterasi, sensor suhu membaca nilai aktual, dan aktuator disesuaikan untuk mendekati setpoint yang diinginkan. Grafik setpoint dataset yang digunakan untuk melatih model juga disajikan dalam penelitian ini.
 
-![Pengumpulan Data](https://github.com/Aliefindymillani/Mikrokontroler/assets/89888415/a97dadc5-8266-42b7-9ec3-ead8c81b1d51)
+![Pengumpulan Data](https://github.com/DimasPrayoga249/kit-itclab/blob/cea01f5e8e468851f3ae05e755960eb04827c8bb/assets/pengumpulan_data.png)
 
 ### Pra Proses Data
 Setelah mendapatkan data set point dan error dari tahap pengumpulan data, dilakukan pra proses data untuk menyiapkan data sebelum memasuki tahap pelatihan model. Salah satu langkah kunci dalam pra proses data adalah pemilihan fitur atau ciri yang akan digunakan. Dalam penelitian ini, fitur yang terpilih adalah set point dan error. Set point merepresentasikan nilai target suhu dalam pengendalian suhu, sementara error adalah perbedaan antara set point dan suhu aktual yang terukur. Selain itu, output yang akan diprediksi dalam penelitian ini adalah Q, yang merupakan hasil penjumlahan dari tiga komponen, yaitu P (Proporsional), I (Integral), dan D (Derivative). Komponen-komponen ini merujuk pada algoritma kontrol PID (Proporsional-Integral-Derivative) yang digunakan untuk mengendalikan suhu.
 
 Selain pemilihan fitur dan pembentukan output, tahap pra proses data juga mencakup normalisasi data. Normalisasi dilakukan untuk mengubah rentang nilai setiap fitur agar sejajar dan dapat diolah dengan baik oleh model pembelajaran mesin. Dalam penelitian ini, digunakan normalisasi Min-Max Scaling, suatu metode yang mengubah skala nilai data dari rentang nilai aktual menjadi rentang nilai antara 0 hingga 1 atau -1 hingga 1 (Naufal et al., 2023). Formula Min-Max Scaling digunakan untuk mencapai normalisasi, dengan X scaled sebagai hasil scaling data ke-i, 𝑥 sebagai nilai asli data ke-i, xmin sebagai nilai minimum dari X, dan xmax sebagai nilai maksimum dari X.
 
-![Pra Proses Data](https://github.com/Aliefindymillani/Mikrokontroler/assets/89888415/bbaa2265-1824-4f0b-a025-6bd866e0854a)
+![Pra Proses Data](https://github.com/DimasPrayoga249/kit-itclab/blob/cea01f5e8e468851f3ae05e755960eb04827c8bb/assets/pra_proses_data.png)
 
 ### Pelatihan Mode
 Pelatihan model dalam arsitektur SVM (Support Vector Machine) merujuk pada proses di mana algoritma SVM belajar dari data latihan untuk membuat model yang dapat digunakan untuk melakukan prediksi atau klasifikasi pada data baru. Dalam SVM, model yang dihasilkan bertujuan untuk memisahkan data ke dalam kelas-kelas yang berbeda dengan menemukan hyperplane (bidang pemisah) optimal. Proses pelatihan ini melibatkan dua tahap utama: pembentukan model dan penentuan parameter.
 
-![SVM](https://github.com/Aliefindymillani/Mikrokontroler/assets/89888415/55edb2ab-dabb-4ca6-beb8-f56ec28c6270)
+![SVM](https://github.com/DimasPrayoga249/kit-itclab/blob/cea01f5e8e468851f3ae05e755960eb04827c8bb/assets/svm.png)
 
 Proses pelatihan model SVM ini bertujuan untuk mencapai generalisasi yang baik, di mana model dapat mengklasifikasikan data baru dengan akurasi tinggi. Penting untuk memahami karakteristik data, memilih parameter dengan bijak, dan melakukan validasi untuk memastikan kinerja model yang baik pada data yang tidak terlihat selama pelatihan.
 
@@ -49,11 +49,11 @@ Proses evaluasi dilakukan untuk membandingkan kinerja implementasi jaringan SVM 
 ## Hasil Penelitian
 Dalam penelitian ini, dilakukan evaluasi kinerja antara pengendali PID tradisional, pengendali PID berbasis deep learning, dan pengendali berbasis LSTM. Tiga metrik evaluasi utama yang digunakan adalah rising time, settling time, dan overshoot.
 
-![PID_Result](https://github.com/Aliefindymillani/Mikrokontroler/assets/89888415/65e20e3a-0a3b-4397-9a3d-267dfc76e8f2)
+![PID_Result](https://github.com/DimasPrayoga249/kit-itclab/blob/cea01f5e8e468851f3ae05e755960eb04827c8bb/assets/PID_Result.png)
 
 PID RESULT
 
-![SVM_Result](https://github.com/Aliefindymillani/Mikrokontroler/assets/89888415/1d1b2d0c-7ca9-4559-b181-2d6d81369c8a)
+![SVM_Result](https://github.com/DimasPrayoga249/kit-itclab/blob/cea01f5e8e468851f3ae05e755960eb04827c8bb/assets/SVM_Result.png)
 
 SVM RESULT
 
